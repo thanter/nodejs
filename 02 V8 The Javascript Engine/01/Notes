@@ -1,0 +1,47 @@
+NODE is written IN C++
+
+BECAUSE
+
+Node is based on the V8 engine,which is written in C++
+
+V8 is Google's open source high-performance JavaScript engine, written in C++ and used in Chromium,
+Node.js and multiple other embedding applications
+V8 compiles and executes JavaScript source code.
+
+
+JAVASCRIPT is the actual code we write.
+ECMASCRIPT is the standard that explains how the language should work.
+There are many JS engines with minor differences.
+
+========== MOST IMPORTANTLY ==============
+V8 can be embedded in other C++ applications!!!
+And, in my application i can enhance/extend the functionality of JS with my additions.
+(That's what nodejs does),
+eg: deal with files and folders, talk to databases etc. C++ already knows how to do these things.
+It's like im adding functionality coming from C++ to JS language.
+
+Another example:
+JS does not support the following code: print('hello'); (based on the ecmascript spec)
+
+BUT
+
+I can define a 'print' method inside my C++ little application which can call the 'print' method of C++
+and it will do what i want it to do.
+
+ACTUALLY, google chrome is another C++ application that extends (based on) V8 engine.
+For example, the Ecmascript spec sais nothing about dom manipulation. But the browser adds
+this functionality to the language.
+
+
+Node does not only have the extended C++ core but it provides a variety of JS code/libs.
+These libs are wrappers around the c++ functionality.
+Easier for us to use.
+
+
+!!!!!! What 'extras' does javascript need to manage a server? !!!!!!!!
+- Better ways to organize our code, into reusable modules
+- Ways to deal with files
+- Ways to deal with DBs
+- Communicate over the internet
+- Accept requests and send responses
+- Ability to deal with work that takes a long time.
